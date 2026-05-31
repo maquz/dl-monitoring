@@ -1,6 +1,6 @@
-import type { AppFormData } from '../types';
 
-export default function Summary({ AppFormData, onReset }: { AppFormData: AppFormData; onReset: () => void }) {
+
+export default function Summary({ onReset }: { onReset: () => void }) {
   return (
     <div className="max-w-lg mx-auto px-4 py-6 text-center mt-20">
       <h2 className="text-2xl font-bold text-sky-800 mb-4">Submission Complete</h2>

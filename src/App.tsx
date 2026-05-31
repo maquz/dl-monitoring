@@ -39,7 +39,7 @@ function App() {
 
   const progress = Math.round(((step + 1) / SECTIONS.length) * 100);
 
-  if (submitted) return <Summary AppFormData={AppFormData} onReset={() => { setFormData(initialFormData); setStep(0); setSubmitted(false); }} />;
+  if (submitted) return <Summary onReset={() => { setFormData(initialFormData); setStep(0); setSubmitted(false); }} />;
 
   return (
     <div className="min-h-screen bg-gray-50">
